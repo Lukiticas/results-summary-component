@@ -1,0 +1,65 @@
+@import url("variables.css");
+@import url("reset.css");
+
+*,
+*:after,
+*:before {
+  font-family: "Hanken Grotesk", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+}
+
+.counter {
+  transition: --num 1s;
+  counter-reset: num var(--num, 0);
+}
+
+.counter::after {
+  content: counter(num);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 50% 0;
+  }
+  50% {
+  background-position: 50% 100%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+
+@keyframes scale {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes appearTop {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appearLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

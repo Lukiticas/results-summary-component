@@ -1,0 +1,37 @@
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+:root {
+    --lightred: hsl(0, 100%, 67%);
+    --orangeyyellow: hsl(39, 100%, 56%);
+    --greenteal: hsl(166, 100%, 37%);
+    --cobaltblue: hsl(234, 85%, 45%);
+
+    --lightslateblue: 252deg, 100%, 67%;
+    --lightroyalblue: 241deg, 81%, 54%;
+    --violetblue: 256deg, 72%, 46%;
+    --persianblue: 241deg, 72%, 46%;
+
+    --white: hsl(0, 0%, 100%);
+    --paleblue: hsl(221, 100%, 96%);
+    --lightlavander:  hsl(241, 100%, 89%);
+    --darkgrayblue: hsl(224, 30%, 27%);
+}
+
+.red {
+    color:  var(--lightred)
+}
+
+.yellow {
+    color:  var(--orangeyyellow)
+}
+.green {
+    color:  var(--greenteal)
+}
+
+.blue {
+    color:  var(--cobaltblue)
+}
